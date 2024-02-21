@@ -1,4 +1,5 @@
-<header>
+<body>
+ <header>
  <h1>
     My Summer
  </h1>
@@ -7,9 +8,12 @@
  </h2>
 </header>
 <main>
+   <div>
  <p>
-    During the summer we spent a lot of time getting ready for the new puppy. We started by deciding what puppy we were going to get. This debate lasted until Christmas when we decided we would get a Havanese. We got in touch with a breeder and they said they had a litter born the week of Christmas we could look at. Mum and Dad went to see the breeder and decided yes we would get one of her puppys. We then bought lots of stuff for the puppy sich as:
+    During the summer we spent a lot of time getting ready for the new puppy. We started by deciding what puppy we were going to get. This debate lasted until Christmas when we decided we would get a Havanese. We got in touch with a breeder and they said they had a litter born the week of Christmas we could look at. Mum and Dad went to see the breeder and decided yes we would get one of her puppys. We then bought lots of stuff for the puppy such as:
     </p>
+    <img src="Puppy stuff.jpg">
+   </div>
     <ul>
     <li>Puppy Pen</li>
     <li>Lead</li>
@@ -17,31 +21,37 @@
     <li>Bedding</li>
     <li>Toys</li>
    </ul>
-   <img src="Puppy stuff.jpg">
+
    <p>
    We built a fence to keep the puppy in annd tidyed the house so the puppy won't chew everything. We are now ready for our puppy to move in on 24th of Febuary.
  </p>
  <h3>
     What I also did:
  </h3>
+<div>
  <ul>
  <li>Went to something rotten</li>
  <li>Joined sailing </li>
  <li>Went for a sleepover</li>
  </ul>
+ <img src="sleepover.jpeg">
+</div>
  <h3>
    The Sleepover
  </h3>
+ <div>
  <p>
 I went for a three night sleepover with Miglia and Hannah one night at each persons house. We started at Miglia's house then mine and finally at Hannah's. We had many intense round of Uno Flip a few of which were riged against me. I had to pick up over 50 cards in one game! At Miglia's house we slept in a tent with a game room and went to the beach at sunset. At my place we had a water fight and made waffles. At Hannahs house we had a game night and swam in her pool. We stayed up late and by the end I was heavly sleep deprived. 
  </p>
  <img src="Uno.jpeg">
+</div>
 </main>
 <footer>
     <p>
       &copy; Beth Savage, Craighead Diocesan School, 2024 
     </p>
   </footer>
+  </body>
 <style>
     h1{
         background: rgb(0, 255, 157);
@@ -65,6 +75,20 @@ I went for a three night sleepover with Miglia and Hannah one night at each pers
       padding: 5px;
    }
    img{
-      width: 250px;
+      height: 20rem;
    }
+   div {
+  display: flex;
+}
+   body {
+    display: grid;
+    grid: " h    .    .  " auto
+          " m    m    .  " auto
+          " f    f    f  " auto
+          / auto auto auto;
+  }
+
+  header { grid-area: h; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
 </style>
